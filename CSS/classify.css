@@ -1,0 +1,42 @@
+html{
+    background:#e9e9e9
+}
+/**/
+.content{
+    width: 93.6%;
+    margin: 0 auto;
+}
+.nav-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav{
+    height: 1.17rem;
+    width: 100%;
+    background-color: #fff;
+}
+.nav-content{
+    height: 100%;
+}
+.nav-content>input{
+    width: 8.26rem;
+    height: .6666667rem;
+    padding: 0 .55rem;
+    background-color: #eaeaea;
+    border: 1px solid #eaeaea;
+    border-radius:.15rem;
+    font-size: .24rem;
+}
+.nav-serach-img, .nav-voice, .nav-icon{
+    width: .37rem;
+    position: absolute;
+}
+.nav-serach-img{
+    left: .45rem;
+}
+.nav-voice{
+    right:.8rem;
+    height: .346rem;
+    width: .293rem;
+}
