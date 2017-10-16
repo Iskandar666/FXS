@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>肥鲜生</title>
+    <script>
+         (function (doc, win) {
+            var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        if (!clientWidth) return;
+                        if (clientWidth >= 768) {
+                            docEl.style.fontSize = '76.8px';
+                        }else {
+                            docEl.style.fontSize = 75 * (clientWidth / 750) + 'px';
+                        }
+                        if(clientWidth >= 1000){
+                            docEl.style.fontSize = '102.4px';
+                        }
+                    };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/swiper-3.4.2.min.css">
+    <style>
+        @font-face{
+            font-family:fzzhengheis-el-gbregular;
+            src: url('font/HELVETI1.TTF');
+            font-family:FZLTCHJW;
+            src: url('font/FZLTCHJW.TTF');
+        }
+    </style>
+    </head>
+<body>
+   <section class="banner">
+       <div class="banner-nav content">
+           <span class="nav-adress">合肥</span>
+           <span class="nav-content">
+               <img src="img/search.png" class="nav-serach-img">
+               <input type="text" placeholder="澳洲进口牛奶" class="nav-search">
+               <img src="img/voice.png" class="nav-voice">
+               <div class="nav-icon"></div>
+            </span>
+           </span>
+       </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/banner.png">
+                    <p class="swiper-slide-tit">FRUITS VEGITABLES</p>
+                    <p class="swiper-font">新鲜果蔬</p>
+                    <p class="swiper-tit-se">全场生鲜新鲜价</p>
+                    <p class="siper-tit-th">39 <span>元起</span></p>
+                    </div>
+                <div class="swiper-slide"><img src="img/banner2.jpg"></div>
+                <div class="swiper-slide"><img src="img/banner3.jpg"></div>
+                <div class="swiper-slide"><img src="img/banner4.jpg"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div> 
+    </section>
+    <section class="nav">
+        <div class="content nav-item">
+            <div class="nav-show">
+            <a href="####" class="nav-sider">
+                <div class="nav-sider-img">
+                    <img src="img/vegetables.png">
+                </div>
+                <p>新鲜蔬菜</p>
+            </a>
+            <a href="####" class="nav-sider">
+                <div class="nav-sider-img">
+                    <img src="img/seafood.png">
+                </div>
+                <p>海鲜水产</p>
+            </a>
+            <a href="####" class="nav-sider">
+                <div class="nav-sider-img">
+                    <img src="img/meet.png">
+                </div>
+                <p>肉禽蛋类</p>
+            </a>
+            <a href="####" class="nav-sider">
+                <div class="nav-sider-img">
+                    <img src="img/fruit.png">
+                </div>
+                <p>缤纷水果</p>
+            </a>
+            <a href="####" class="nav-sider">
+                <div class="nav-sider-img">
+                    <img src="img/bread.png">
+                </div>
+                <p>面包烘焙</p>
+            </a>
+            <a href="####" class="nav-sider">
+                <div class="nav-sider-img">
+                    <img src="img/milk.png">
+                </div>
+                <p>鲜奶饮品</p>
+            </a>
+            <a href="####" class="nav-sider">
+                <div class="nav-sider-img">
+                    <img src="img/suprise.png">
+                </div>
+                <p>今日特价</p>
+            </a>
+            <a href="####" class="nav-sider">
+                <div class="nav-sider-img">
+                    <img src="img/evaluate.png">
+                </div>
+                <p>优品生活</p>
+            </a>
+        </div>
+        <div class="nav-show">
+            <a href="####" class="nav-sider">
+                <div class="nav-sider-img">
+                    <img src="img/vegetables.png">
+                </div>
+                <p>新鲜蔬菜</p>
+            </a>
+            <a href="####" class="nav-sider">
+                <div class="nav-sider-img">
+                    <img src="img/seafood.png">
+                </div>
+                <p>海鲜水产</p>
+            </a>
+            <a href="####" class="nav-sider">
+                <div class="nav-sider-img">
+                    <img src="img/meet.png">
+                </div>
+                <p>肉禽蛋类</p>
+            </a>
+            <a href="####" class="nav-sider">
+                <div class="nav-sider-img">
+                    <img src="img/fruit.png">
+                </div>
+                <p>缤纷水果</p>
+            </a>
+            <a href="####" class="nav-sider">
+                <div class="nav-sider-img">
+                    <img src="img/bread.png">
+                </div>
+                <p>面包烘焙</p>
+            </a>
+            <a href="####" class="nav-sider">
+                <div class="nav-sider-img">
+                    <img src="img/milk.png">
+                </div>
+                <p>鲜奶饮品</p>
+            </a>
+            <a href="####" class="nav-sider">
+                <div class="nav-sider-img">
+                    <img src="img/suprise.png">
+                </div>
+                <p>今日特价</p>
+            </a>
+            <a href="####" class="nav-sider">
+                <div class="nav-sider-img">
+                    <img src="img/evaluate.png">
+                </div>
+                <p>优品生活</p>
+            </a>
+        </div>
+        </div>
+        <div class="nav-contrl">
+            <div class="contrl-item conterl-active"></div>
+            <div class="contrl-item"></div>
+        </div>
+        <div class="nav-foot content">
+            <div class="nav-foot-tit">
+               <img src="img/creative.png">
+               <p>每日鲜报</p> 
+            </div>
+            <div class="nav-foot-content">
+                <p>越南大青芒39.9包邮/2+1斤</p>
+                <IMG src="img/more.png">
+            </div>
+        </div>
+    </section> 
+    <!--nav结束-->
+    <section class="scare">
+        <div class="scare-tit">
+            <div class="scare-tit-content content">
+                <div class="scare-tit-nav">
+                    <p>限时抢购</p>
+                </div>
+                 <div class="scare-time">
+                     <div class="time-circle" id="hours"></div>:
+                     <div class="time-circle" id="minutes"></div>:
+                     <div class="time-circle" id ="seconds"></div>
+                 </div>
+            </div>
+        </div>
+        <div class="scare-intro content">
+            <div class="scare-intro-item">
+                <div class="sacre-intro-img">
+                    <img src="img/scare1.png">
+                </div>
+                <p class="sarcre-intro-tit">赣南脐橙1kg</p>
+                <p class="sarcre-intro-tit spe-line">¥29</p>
+                <p class="sarcre-intro-tit">¥19</p>
+            </div>
+            <div class="scare-intro-item">
+                <div class="sacre-intro-img">
+                    <img class="sacre-spe-img" src="img/scare.png">
+                </div>
+                <p class="sarcre-intro-tit">有机青菜4kg</p>
+                <p class="sarcre-intro-tit spe-line">¥28</p>
+                <p class="sarcre-intro-tit">¥16.5</p>
+            </div>
+            <div class="scare-intro-item">
+                <div class="sacre-intro-img">
+                    <img src="img/scare2.png">
+                </div>
+                <p class="sarcre-intro-tit">智利樱桃1kg</p>
+                <p class="sarcre-intro-tit spe-line">¥49.9</p>
+                <p class="sarcre-intro-tit">¥29.9</p>
+            </div>
+        </div>
+    </section>
+    <section class="like">
+        <div class="like-nav content"></div>
+        <div class="like-contetn"></div>
+        <div class="like-contetn"></div>
+        <div class="like-intro content">
+            <div class="like-intro-content">
+                <div class="like-intro-sider">
+                    <img src="img/like-intro.png">
+                </div>
+                <p class="sarcre-intro-tit">新疆无籽葡萄</p>
+                <p class="sarcre-intro-tit ">1份约500g</p>
+                <p class="sarcre-intro-tit">¥18.5</p>                               
+            </div>
+            <div class="like-intro-content">
+                <div class="like-intro-sider">
+                    <img src="img/like-intro1.png">
+                </div>
+                <p class="sarcre-intro-tit">当日新鲜河虾</p>
+                <p class="sarcre-intro-tit ">1份约500g</p>
+                <p class="sarcre-intro-tit">¥42.5</p>
+            </div>
+            <div class="like-intro-content">
+                <div class="like-intro-sider">
+                    <img src="img/like-intro2.png">
+                </div>
+                <p class="sarcre-intro-tit">有机现摘番茄</p>
+                <p class="sarcre-intro-tit">1份约675g</p>
+                <p class="sarcre-intro-tit">¥32.9</p>
+            </div>
+        </div>
+    </section>
+    </section>
+    <section class="recommend">
+        <div class="recommend-nav content"></div>
+        <div class="recommend-content"></div>
+        <div class="recommend-content"></div>
+        <div class="like-intro content">
+            <div class="like-intro-content">
+                <div class="like-intro-sider">
+                    <img src="img/recomend-vegetables.png">
+                </div>
+                <p class="sarcre-intro-tit">现摘新鲜包菜</p>
+                <p class="sarcre-intro-tit ">1份约1kg</p>
+                <p class="sarcre-intro-tit">¥9.9</p>                               
+            </div>
+            <div class="like-intro-content">
+                <div class="like-intro-sider">
+                    <img src="img/fish.png">
+                </div>
+                <p class="sarcre-intro-tit">鲷鱼片罗非鱼</p>
+                <p class="sarcre-intro-tit ">1份约275g</p>
+                <p class="sarcre-intro-tit">¥19.9</p>
+            </div>
+            <div class="like-intro-content">
+                <div class="like-intro-sider">
+                    <img src="img/recomend-vegetables2.png">
+                </div>
+                <p class="sarcre-intro-tit">农家有机玉米</p>
+                <p class="sarcre-intro-tit">1份约500g</p>
+                <p class="sarcre-intro-tit">¥8.9</p>
+            </div>
+        </div>
+    </section>
+    <section class="family">
+        <div class="family-nav"></div>
+        <div class="family-content">
+            <div class="family-content-img"></div>
+            <div class="family-content-intro">
+                <p class="family-intro-tit">越南红心火龙果</p>
+                <p class="family-intro-tit">个大爽口，清新甜蜜</p>
+                <p class="family-intro-tit">¥ 69.9<span>/5kg</span></p>
+                <img src="img/cart.png">
+            </div>
+        </div>
+        <div class="family-content">
+            <div class="family-content-img family1"></div>
+            <div class="family-content-intro">
+                <p class="family-intro-tit">美国进口牛肉</p>
+                <p class="family-intro-tit">肉质新鲜，口感滑嫩</p>
+                <p class="family-intro-tit">¥ 59.9<span>/2kg</span></p>
+                <img src="img/cart.png">
+            </div>
+        </div>
+        <div class="family-content">
+            <div class="family-content-img family2"></div>
+            <div class="family-content-intro">
+                <p class="family-intro-tit">青田谷园现摘草莓</p>
+                <p class="family-intro-tit">现摘新鲜，鲜嫩多汁</p>
+                <p class="family-intro-tit">¥ 39.9<span>/1.5kg</span></p>
+                <img src="img/cart.png">
+            </div>
+        </div>
+        <div class="family-content">
+            <div class="family-content-img family3"></div>
+            <div class="family-content-intro">
+                <p class="family-intro-tit">正宗农家五谷杂粮</p>
+                <p class="family-intro-tit">颗颗饱满，健康养生</p>
+                <p class="family-intro-tit">¥ 46.5<span>/4kg</span></p>
+                <img src="img/cart.png">
+            </div>
+        </div>
+        <div class="family-content m_b">
+            <div class="family-content-img family4"></div>
+            <div class="family-content-intro">
+                <p class="family-intro-tit">澳大利亚新鲜脐橙</p>
+                <p class="family-intro-tit">高糖低酸，皮薄易剥</p>
+                <p class="family-intro-tit">¥ 36.9<span>/2.5kg</span></p>
+                <img src="img/cart.png">
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="footer-content">
+            <img src="img/home_fill.png">
+            <a href="index.html" class="footer-intro footer-intro-active">首页</a>
+        </div>
+        <div class="footer-content">
+            <img src="img/all.png">
+            <a href="index_ware.html" class="footer-intro ">分类</a>
+        </div>
+        <div class="footer-content">
+            <img src="img/discover.png">
+            <a href="index_xqy.html" class="footer-intro ">发现</a>
+        </div>
+        <div class="footer-content">
+            <img src="img/foot-cart.png">
+            <p class="footer-intro">购物车</p>
+        </div>
+        <div class="footer-content">
+            <img src="img/people.png">
+            <a href="index_login.html" class="footer-intro">我的</a>
+        </div>
+    </section>
+</body>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/swiper-3.4.2.jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    var mySwiper = new Swiper(".swiper-container",{
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        paginationClickable: true,
+        loop:true,
+        slidesPerView: 1,
+        autoplay: 3000,
+    }) 
+})    
+</script>
+<script src="js/index.js"></script>
+<script src="js/time.js"></script>
+</html>
