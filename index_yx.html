@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style2.css">
+ <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<title>邮箱</title>
+</head>
+<body>
+	<div class="content">
+		<div class="cont_title">收件箱</div>
+		<div class="cont_1"><input type="button" value="全选" id="All"><input type="button" value="全不选" id="uncheck"><input type="button" value="反选" id="othercheck"><input type="button" value="创建邮箱" id="but"><input type="button" id="sc" value="删除"><input type="button" value="移动到尾部" id="yd"></div>
+		<div class="cont_2">
+			<div class="cont_2_1"><input type="checkbox" id="all1"></div>
+			<div class="cont_2_2">发件人</div>
+			<div class="cont_2_3">主题</div>
+			<div class="cont_2_4">时间</div>
+			<div class="cont_2_5">删除</div>
+		</div>
+		<table id="tab">
+			<tbody>
+				<tr>
+					<td class="td_1"><input type="checkbox" name="dms"></td>
+					<td class="td_2">baidu</td>
+					<td class="td_3">百度帐号--邮箱身份验证</td>
+					<td class="td_4">2017/8/29</td>
+					<td class="td_5"><input type="button" value="删除" class="sc1"/></td>
+				</tr>
+			</tbody>
+			<tbody>
+				<tr>
+					<td class="td_1"><input type="checkbox" name="dms"></td>
+					<td class="td_2">baidu</td>
+					<td class="td_3">百度帐号--邮箱身份验证</td>
+					<td class="td_4">2017/8/29</td>
+					<td class="td_5"><input type="button" value="删除"  class="sc1"/></td>
+				</tr>
+			</tbody>
+			<tbody>
+				<tr>
+					<td class="td_1"><input type="checkbox" name="dms"></td>
+					<td class="td_2">baidu</td>
+					<td class="td_3">百度帐号--邮箱身份验证</td>
+					<td class="td_4">2017/8/29</td>
+					<td class="td_5"><input type="button" value="删除"  class="sc1"/></td>
+				</tr>
+			</tbody>
+			<tbody>
+				<tr>
+					<td class="td_1"><input type="checkbox" name="dms"></td>
+					<td class="td_2">baidu</td>
+					<td class="td_3">百度帐号--邮箱身份验证</td>
+					<td class="td_4">2017/8/29</td>
+					<td class="td_5"><input type="button" value="删除"  class="sc1"/></td>
+				</tr>
+			</tbody>
+			<tbody>
+				<tr>
+					<td class="td_1"><input type="checkbox" name="dms"></td>
+					<td class="td_2">baidu</td>
+					<td class="td_3">百度帐号--邮箱身份验证</td>
+					<td class="td_4">2017/8/29</td>
+					<td class="td_5"><input type="button" value="删除"  class="sc1"/></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<script type="text/javascript">
+	$(function(){
+		$('#but').click(function(){
+			$('#tab').append("<tbody><tr><td class='td_1'><input type='checkbox' name='dms'></td><td class='td_2'>baidu</td><td class='td_3'>百度帐号--邮箱身份验证</td><td class='td_4'>2017/8/29</td><td class='td_5'><input type='button' value='删除'  class='sc1'/></td></tr></tbody>")
+		})
+	})
+ $("#sc").click(function(){
+           $(":checked").parent("td").parent("tr").parent("tbody").remove()
+			});
+$("#All").click(function(){
+		   $(":checkbox").prop("checked",true)
+		   });
+$("#uncheck").click(function(){
+		   $(":checkbox").prop("checked",false)
+		   });
+ $("#othercheck").click(function(){
+		$(":checkbox").each(function(){
+           $(this).prop("checked",!$(this).prop("checked"));
+		   })
+		   
+          });
+$('#yd').click(function(){
+	var cl=$(':checked').parent("td").parent("tr").parent("tbody").clone();
+	$(':checked').parents("tbody").remove();
+	$('#tab').append(cl)
+})
+$('.sc1').click(function(){
+	$(this).parents("tbody").remove()
+	})
+	</script>
+</body>
+</html>
